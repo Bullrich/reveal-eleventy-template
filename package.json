@@ -4,7 +4,8 @@
   "description": "Template for creating presentations",
   "scripts": {
     "start": "eleventy --serve --quiet",
-    "build": "NODE_ENV=production eleventy"
+    "build": "NODE_ENV=production eleventy",
+    "tidy": "prettier ./src --write"
   },
   "repository": {
     "type": "git",
