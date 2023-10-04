@@ -17,18 +17,20 @@ As there is already an [`npm` package](https://www.npmjs.com/package/reveal.js?a
 Before anything, you need to run `npm install` to install the dependencies.
 
 The available commands are:
+
 - `npm start`: Development server with hot reload in `http://localhost:8080/`.
 - `npm run build`: Build the site to the `dist` directory.
 
 [`src/index.html`](./src/index.html) is the main page. You can find all the available slides there.
 
 You may have notice that inside the class `slides`, there are some `include` statements:
+
 ```html
 <div class="slides">
     {% include "slides/01-example.html" %}
     <section>
-        {% include "slides/02-nested.html" %}
-        {% include "slides/02.1-nested.html" %}
+        {% include "slides/02-nested.html" %} {% include
+        "slides/02.1-nested.html" %}
     </section>
     {% include "slides/03-promote.html" %}
 </div>
@@ -36,7 +38,7 @@ You may have notice that inside the class `slides`, there are some `include` sta
 
 This are direct imports from the [`src/_includes/`](src/_includes/) directory.
 
-You can write your own sections inside the [`src/_includes/`](src/_includes/) directory, and just add them to your presentation. That way, you can split the section into different files. 
+You can write your own sections inside the [`src/_includes/`](src/_includes/) directory, and just add them to your presentation. That way, you can split the section into different files.
 
 You can also combine many sections into one file if you want. At the end of the day, the only thing that the `include` command does, is to inject the html code from the file into the `dist/index.html` file.
 
@@ -44,10 +46,10 @@ Once you have edited your slides, you can present them, or you can deploy the pr
 
 ### How to deploy
 
-You only need *two steps* to set up and deploy your slides:
+You only need _two steps_ to set up and deploy your slides:
 
 First, [create a new repository from this template](https://github.com/new?template_name=reveal-eleventy-template&template_owner=Bullrich).
 
-Then go to the pages settings and set the `Source` of *Build and deployment* to `GitHub Actions`. (This menu can be found in `Settings` > `Pages`).
+Then go to the pages settings and set the `Source` of _Build and deployment_ to `GitHub Actions`. (This menu can be found in `Settings` > `Pages`).
 
 The deployment will automatically update on every push.

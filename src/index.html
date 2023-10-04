@@ -1,32 +1,31 @@
 <!doctype html>
 <header>
-    <link rel="stylesheet" href="{{ 'assets/reveal/reveal.css' | url }}">
-    <link rel="stylesheet" href="{{ 'assets/reveal/theme/black.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/reveal/reveal.css' | url }}" />
+  <link rel="stylesheet" href="{{ 'assets/reveal/theme/black.css' | url }}" />
 </header>
 <title>Page title</title>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
-            {% include "slides/01-example.html" %}
-            <section>
-                {% include "slides/02-nested.html" %}
-                {% include "slides/02.1-nested.html" %}
-            </section>
-            {% include "slides/03-promote.html" %}
-        </div>
+  <div class="reveal">
+    <div class="slides">
+      {% include "slides/01-example.html" %}
+      <section>
+        {% include "slides/02-nested.html" %} {% include
+        "slides/02.1-nested.html" %}
+      </section>
+      {% include "slides/03-promote.html" %}
     </div>
+  </div>
 
-
-    <script src="{{ 'assets/reveal/reveal.js' | url }}"></script>
-    <script>
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            slideNumber: true,
-            autoAnimate: false,
-            transition: 'none'
-        });
-    </script>
+  <script src="{{ 'assets/reveal/reveal.js' | url }}"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      slideNumber: true,
+      autoAnimate: false,
+      transition: "none",
+    });
+  </script>
 </body>
