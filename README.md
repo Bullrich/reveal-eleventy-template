@@ -2,6 +2,8 @@
 
 Template which implements [`reveal.js`](https://revealjs.com/) in [`11ty`](https://www.11ty.dev/) for simple deployment and development.
 
+[**Demo**](https://bullrich.dev/reveal-eleventy-template/)
+
 ## Motivation
 
 Setting up a `reveal.js` project isn't necesarily difficult, but can be a bit messy.
