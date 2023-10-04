@@ -1,0 +1,26 @@
+{
+  "name": "reveal-eleventy-template",
+  "version": "1.0.0",
+  "description": "Template for creating presentations",
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "build": "NODE_ENV=production eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bullrich/reveal-eleventy-template.git"
+  },
+  "author": "Javier Bullrich <javier@bullrich.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bullrich/reveal-eleventy-template/issues"
+  },
+  "homepage": "https://github.com/Bullrich/reveal-eleventy-template#readme",
+  "dependencies": {
+    "reveal.js": "^4.6.1"
+  },
+  "main": ".eleventy.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
