@@ -18,14 +18,15 @@
   </div>
 
   <script src="{{ 'assets/reveal/reveal.js' | url }}"></script>
+  <script src="{{ 'assets/reveal/plugin/highlight/highlight.js' | url }}"></script>
+  <script src="{{ 'assets/reveal/plugin/notes/notes.js' | url }}"></script>
   <script>
     Reveal.initialize({
       controls: true,
       progress: true,
       history: true,
-      slideNumber: true,
-      autoAnimate: false,
-      transition: "none",
+      slideNumber: false,
+      plugins: [ RevealNotes, RevealHighlight ]
     });
   </script>
 </body>
